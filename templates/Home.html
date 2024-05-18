@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="renderer" content="webkit"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="theme-color" content="#ffffff">
+  <title>AutoPoem</title>
+  <link rel="preconnect" href="//cdn.w3cbus.com">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/mdui.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.e8409b3c.css')}}">
+
+</head>
+<body class="mdui-drawer-body-left">
+<div class="mdui-appbar-with-toolbar mg-app">
+
+<div class="mc-appbar mdui-appbar mdui-appbar-fixed">
+  <div class="toolbar mdui-toolbar">
+    <button class="drawer mdui-btn mdui-btn-icon mdui-ripple">
+      <i class="mdui-icon material-icons">menu</i>
+    </button>
+    <a class="headline" href="/">Poem</a>
+    <div class="title">首页</div>
+    <div class="mdui-toolbar-spacer"></div>
+    <div class="login mdui-btn mdui-btn-dense">？</div>
+    <div class="register mdui-btn mdui-btn-dense">¿</div>
+  </div>
+</div>
+<div class="mc-drawer mdui-drawer">
+  <div class="mdui-list">
+    <a class="mdui-list-item mdui-ripple mdui-list-item-active" href="/home">
+      <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+      <div class="mdui-list-item-content">首页</div>
+    </a>
+    <a class="mdui-list-item mdui-ripple" href="/poem" target="framename">
+      <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+      <div class="mdui-list-item-content">诗词生成</div>
+    </a>
+  </div>
+  <div class="copyright">
+    <p>Powered by <a href="https://mdui.org" target="_blank">MDUI</a> &amp; Surise_su</a></p>
+  </div>
+</div>
+
+  <div id="page-index" class="mdui-container"><div class="banner"><h1><strong>Auto Creating Poetry</strong></h1><div class="meta">Artificial Intelligence Learns to Create Poetry Systems<br></div>
+  <div class="actions">
+  <h1><strong>使用指南</strong></h1><div class="meta">
+  1.在诗词生成界面输入想要生成诗歌的首句或首个字<br>
+  2.接着输入您想选择的模型版本    内置:poem，五律，五绝，七绝<br>
+  3.点击生成按钮即可</div>
+  </div><div class="more-meta mdui-typo"><span class="current">当前版本：Ver.1.0.0.0<br>Powered by Surise_su<br>Copyright © 2019-2023 Surise SoftWare</span>
+      <span>
+  </span>
+</div>
+</div>
+<div class="feature"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  </svg>
+</div>
+<!--UI JavaScript -->
+<script src="{{url_for('static', filename='js/mdui.min.js')}}"></script>
+<script async src="{{url_for('static', filename='js/adsbygoogle.js')}}"></script>
+</body>
+</html>

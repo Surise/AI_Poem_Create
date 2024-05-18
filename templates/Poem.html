@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="renderer" content="webkit"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="theme-color" content="#ffffff">
+  <title>AutoPoem</title>
+  <link rel="preconnect" href="//cdn.w3cbus.com">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/mdui.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.e8409b3c.css')}}">
+
+</head>
+<body class="mdui-drawer-body-left">
+<div class="mdui-appbar-with-toolbar mg-app">
+
+<div class="mc-appbar mdui-appbar mdui-appbar-fixed">
+  <div class="toolbar mdui-toolbar">
+    <button class="drawer mdui-btn mdui-btn-icon mdui-ripple">
+      <i class="mdui-icon material-icons">menu</i>
+    </button>
+    <a class="headline" href="/">Poem</a>
+    <div class="title">诗词生成</div>
+    <div class="mdui-toolbar-spacer"></div>
+    <div class="login mdui-btn mdui-btn-dense">？</div>
+    <div class="register mdui-btn mdui-btn-dense">¿</div>
+  </div>
+</div>
+<div class="mc-drawer mdui-drawer">
+  <div class="mdui-list">
+    <a class="mdui-list-item mdui-ripple " href="/home" target="framename">
+      <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+      <div class="mdui-list-item-content">首页</div>
+    </a>
+    <a class="mdui-list-item mdui-ripple mdui-list-item-active" href="/poem">
+      <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+      <div class="mdui-list-item-content">诗词生成</div>
+    </a>
+
+  </div>
+  <div class="copyright">
+    <p>Powered by <a href="https://mdui.org" target="_blank">MDUI</a> &amp; Surise_su</a></p>
+  </div>
+</div>
+<div class="mdui-tab mdui-color-theme" mdui-tab>
+  <a href="#example7-tab1" class="mdui-ripple mdui-ripple-white">
+<i class="mdui-icon material-icons">&#xe865;</i>
+    <label>生成</label>
+  </a>
+</div>
+
+<div class="mdui-textfield mdui-textfield-expandable">
+  <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
+    <i class="mdui-icon material-icons">book</i>
+  </button>
+  <input class="mdui-textfield-input" id="data" type="text" placeholder="{{s}}"/>
+  <button class="mdui-textfield-close mdui-btn mdui-btn-icon">
+    <i class="mdui-icon material-icons">close</i>
+  </button>
+  <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
+    <i class="mdui-icon material-icons">book</i>
+  </button>
+  <input class="mdui-textfield-input" id="m" type="text" placeholder="{{y}}"/>
+  <button class="mdui-textfield-close mdui-btn mdui-btn-icon">
+    <i class="mdui-icon material-icons">close</i>
+  </button>
+</div>
+<script>
+function test(){
+window.location.href="/poem?s=" + document.getElementById("data").value+"&y="+document.getElementById("m").value;
+}
+</script>
+<div>
+  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" onclick='test()'" >生成</button>
+  </div>
+
+<div class="mdui-textfield">
+  <label class="mdui-textfield-label">生成后的诗词</label>
+  <input class="mdui-textfield-input" id="date" type="text" value="{{result}}"/>
+</div>
+
+<!--UI JavaScript -->
+<script src="{{url_for('static', filename='js/mdui.min.js')}}"></script>
+<script async src="{{url_for('static', filename='js/adsbygoogle.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery-1.4.2.min.js')}}" type="text/javascript"></script>
+<script async src="{{url_for('static', filename='js/adsbygoogle.js')}}"></script><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5031529766300769" data-ad-slot="5379057739"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+                </td>
+            </tr>
+        </table>    
+        <br />
+
+        <table border="0" width="631" style="border-collapse: collapse">
+            <tr>
+         
+            </tr>
+            <tr>
+                <td align="center"><br />
+                </td>
+            </tr>
+        </table>
+        <div style="display:none;">
+            <script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1280833217&web_id=1280833217"></script>
+        </div>
+
+</body>
+</html>
